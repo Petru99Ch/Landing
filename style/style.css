@@ -1,0 +1,781 @@
+body {
+  font-family: "Source Code Pro", monospace;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+.main-section {
+  overflow: hidden;
+  font-family: "Source Code Pro", monospace;
+  font-size: 14px;
+}
+.main-section .drawer-overlay {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+.main-section .drawer-overlay .drawer-menu {
+  height: 100%;
+  background-color: #fff;
+  width: 300px;
+  transition: 0.5s;
+}
+.main-section .drawer-overlay .drawer-menu li {
+  padding: 1em;
+  border-bottom: 1px solid #999;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
+}
+.main-section .drawer-overlay .drawer-menu li a {
+  color: #212222;
+  text-decoration: none;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
+}
+.main-section .drawer-overlay .drawer-menu li:first-child {
+  padding-left: 0.5em;
+  font-size: 2em;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+.main-section .background-video {
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 3em;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .navbar-menu {
+  width: 45%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.navbar .navbar-menu .nav-link:hover .down-menu {
+  display: block;
+}
+.navbar .navbar-menu a:hover {
+  color: #999;
+}
+.navbar .navbar-menu .down-menu {
+  position: absolute;
+  background-color: #fff;
+  z-index: 2;
+  bottom: -1900%;
+  left: 0;
+  display: none;
+}
+.navbar .navbar-menu .down-menu a {
+  display: block;
+  text-decoration: none;
+  color: #212222;
+  padding: 1em;
+  transform: translateX(-5%);
+  transition: 0.5s;
+}
+.navbar .navbar-menu .down-menu a i {
+  transform: translateX(-200%);
+  color: transparent;
+  transition: 0.5s;
+}
+.navbar .navbar-menu .down-menu a:hover {
+  transform: translateX(5%);
+}
+.navbar .navbar-menu .down-menu a:hover i {
+  transform: translateX(0);
+  color: black;
+}
+.navbar .navbar-menu .button-custom-menu {
+  font-size: 12px;
+  background-color: #8c63fd;
+  color: #fff;
+  padding: 1.2em 3em;
+  border-radius: 100px;
+  border: none;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.navbar .navbar-menu .button-custom-menu:hover {
+  background-color: #000;
+}
+.navbar .btn-drawer-menu {
+  display: none;
+}
+.navbar .btn-drawer-menu a {
+  font-size: 28px;
+  color: #fff;
+}
+
+.header-description {
+  position: absolute;
+  top: 20vh;
+  right: 0;
+  left: 55vw;
+  bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.header-description .header-description-section {
+  color: #8c63fd;
+  text-transform: uppercase;
+  font-family: "Source Code Pro", monospace;
+  letter-spacing: 4px;
+  transition: 1s;
+  opacity: 0;
+}
+.header-description .header-description-head {
+  font-family: Roboto;
+  color: #fff;
+  font-size: 65.8px;
+  font-weight: 500;
+  transition: 1s;
+  opacity: 0;
+}
+.header-description .header-description-text {
+  font-family: Roboto;
+  color: #999;
+  font-size: 18px;
+  line-height: 1.5;
+  transition: 1s;
+  opacity: 0;
+}
+.header-description .header-description-btn {
+  font-size: 14px;
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-color: #8c63fd;
+  color: #fff;
+  padding: 1.2em 3em;
+  border-radius: 100px;
+  border: none;
+  box-sizing: border-box;
+  padding: 1.5em;
+  width: 230px;
+  transition: 0.5s;
+  opacity: 0;
+}
+.header-description .header-description-btn:hover {
+  background-color: #000;
+}
+
+.crew {
+  background-color: #0f1012;
+  background-position: bottom;
+  padding: 15vh;
+  width: 100%;
+  height: 100vh;
+  transition: 2s;
+}
+.crew .crew-d {
+  display: flex;
+  width: 100%;
+}
+.crew .crew-d .crew-description {
+  width: 40%;
+}
+.crew .crew-d .crew-description .crew-section {
+  color: #8c63fd;
+  text-transform: uppercase;
+  font-family: "Source Code Pro", monospace;
+  letter-spacing: 4px;
+}
+.crew .crew-d .crew-description .crew-head {
+  font-family: Roboto;
+  color: #fff;
+  font-size: 49px;
+  font-weight: 500;
+  padding: 1em;
+  padding-left: 0;
+}
+.crew .crew-d .crew-description .crew-text {
+  font-family: Roboto;
+  color: #999;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 4em;
+}
+.crew .crew-d .crew-description .crew-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.crew .crew-d .crew-description .crew-footer .crew-description-footer {
+  font-family: "Source Code Pro", monospace;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  color: #fff;
+}
+.crew .crew-d .crew-profesion {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.crew .crew-d .crew-profesion .designer {
+  grid-row: 1/span 2;
+  grid-column: 2/span 3;
+  position: relative;
+}
+.crew .crew-d .crew-profesion .designer .profesion-1 {
+  background-color: #8c63fd;
+  position: absolute;
+  bottom: 20%;
+  right: 40%;
+  padding: 0.5em 1em;
+  font-family: "Source Code Pro", monospace;
+  letter-spacing: 4px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.crew .crew-d .crew-profesion .designer .profesion-1 span {
+  color: rgba(255, 255, 255, 0.3764705882);
+}
+.crew .crew-d .crew-profesion .developer {
+  grid-row: 2/span 3;
+  grid-column: 4/span 6;
+  position: relative;
+}
+.crew .crew-d .crew-profesion .developer .profesion-2 {
+  background-color: #8c63fd;
+  position: absolute;
+  bottom: 40%;
+  right: 30%;
+  padding: 0.5em 1em;
+  font-family: "Source Code Pro", monospace;
+  letter-spacing: 4px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.crew .crew-d .crew-profesion .developer .profesion-2 span {
+  color: rgba(255, 255, 255, 0.3764705882);
+}
+
+.crew:hover {
+  background-image: url(https://n.foxdsgn.com/deva/wp-content/uploads/2020/10/Screenshot-at-Oct-02-11-04-26-1.png);
+  background-position: center center;
+}
+
+.deva {
+  height: 100vh;
+  background-color: green;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  font-family: "Source Code Pro", monospace;
+  font-size: 14px;
+}
+.deva .deva-description {
+  background-color: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.deva .deva-description .deva-description-main h4 {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 500;
+  padding: 1em 1em 1em 0;
+}
+.deva .deva-description .deva-description-main p {
+  color: #fff;
+  font-size: 12px;
+  padding: 1em 1em 1em 0;
+}
+.deva .deva-description .deva-description-second {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+.deva .deva-description .deva-description-second a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.deva .deva-description .deva-description-second a:hover {
+  color: #8c63fd;
+}
+.deva .deva-bg {
+  background-color: rgba(0, 0, 0, 0.9450980392);
+  width: 100%;
+  height: 100vh;
+}
+.deva .deva-bg .deva-main {
+  width: 450px;
+  height: 450px;
+  margin: auto;
+  transform: translateY(100px);
+  position: relative;
+}
+.deva .deva-bg .deva-main .deva-text {
+  position: absolute;
+  text-align: center;
+  left: 20%;
+  top: 20%;
+  z-index: 3;
+}
+.deva .deva-bg .deva-main .deva-text img {
+  margin-top: 40px;
+}
+.deva .deva-bg .deva-main .deva-text h3 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 42px;
+  color: #fff;
+  margin-top: 40px;
+}
+.deva .deva-bg .deva-main .deva-text p {
+  color: #999;
+  margin-top: 40px;
+  line-height: 1.5;
+}
+.deva .deva-bg .deva-main .deva-top {
+  width: 420px;
+  height: 420px;
+  background: linear-gradient(315deg, rgba(0, 0, 0, 0) 50%, rgb(3, 3, 18) 50%, rgb(18, 55, 62) 85%);
+  position: absolute;
+  border-radius: 100%;
+  right: 0;
+}
+.deva .deva-bg .deva-main .deva-bottom {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 50%, rgb(3, 3, 18) 50%, rgb(18, 55, 62) 85%);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 100%;
+}
+
+.pricing {
+  background-color: #0f1012;
+  color: #fff;
+  padding: 4em;
+}
+.pricing .pricing-main .pricing-header {
+  text-align: center;
+}
+.pricing .pricing-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.pricing .pricing-content .plan {
+  width: 30%;
+  background-color: #25292f;
+  border-radius: 8px;
+  box-shadow: 0px 0px 57px 2px rgb(28, 26, 26);
+  position: relative;
+}
+.pricing .pricing-content .plan h3 {
+  width: 100%;
+  text-align: center;
+  background-color: #32373f;
+  padding: 1em 0;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.pricing .pricing-content .plan p {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 0.5em;
+  font-size: 64.4px;
+  font-family: Roboto;
+  font-weight: 100;
+  color: #fff;
+}
+.pricing .pricing-content .plan p span {
+  font-size: 14px;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 400;
+  color: #8c63fd;
+}
+.pricing .pricing-content .plan ul {
+  width: 100%;
+  padding: 2em;
+  padding-left: 3em;
+}
+.pricing .pricing-content .plan ul li {
+  width: 90%;
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 400;
+  color: #999;
+  padding: 1em 0;
+  border-bottom: 1px solid #777;
+}
+.pricing .pricing-content .plan ul li:last-child {
+  border: none;
+}
+.pricing .pricing-content .plan .btn-center {
+  text-align: center;
+}
+.pricing .pricing-content .plan button {
+  font-size: 14px;
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-color: #8c63fd;
+  color: #fff;
+  padding: 1.5em 2em;
+  border-radius: 100px;
+  border: none;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.pricing .pricing-content .plan button:hover {
+  background-color: #000;
+}
+.pricing .pricing-content .plan-scale {
+  transform: scale(1.1);
+  z-index: 2;
+  padding-bottom: 2em;
+}
+.pricing .pricing-content .plan-scale h3 {
+  background-color: #8c63fd;
+}
+.pricing .pricing-content .plan-scale .check {
+  width: 90%;
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 400;
+  color: #fff;
+  padding: 1em 0;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.pricing .pricing-section {
+  color: #8c63fd;
+  text-transform: uppercase;
+  font-family: "Source Code Pro", monospace;
+  letter-spacing: 4px;
+}
+.pricing .pricing-head {
+  font-family: Roboto;
+  color: #fff;
+  font-size: 49px;
+  font-weight: 500;
+  padding: 1em;
+}
+.pricing .pricing-text {
+  font-family: Roboto;
+  color: #999;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 4em;
+}
+
+.functionality-1 {
+  height: 100vh;
+  background-image: url(https://n.foxdsgn.com/deva/wp-content/uploads/2020/10/B_Ph_Part_6.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #0f1012;
+  transition: 1s;
+}
+.functionality-1 .functionality-1-position {
+  height: 100vh;
+  width: 40%;
+  padding: 2em;
+  margin: 0 10%;
+}
+.functionality-1 .functionality-1-position #showText {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  opacity: 0;
+  transition: 1s;
+}
+.functionality-1 .functionality-1-section {
+  color: #8c63fd;
+  text-transform: uppercase;
+  font-family: "Source Code Pro", monospace;
+  letter-spacing: 4px;
+}
+.functionality-1 .functionality-1-head {
+  font-family: Roboto;
+  color: #fff;
+  font-size: 49px;
+  font-weight: 500;
+}
+.functionality-1 .functionality-1-text {
+  font-family: Roboto;
+  color: #999;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.functionality-1 .functionality-1-btn {
+  font-size: 14px;
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-color: #8c63fd;
+  color: #fff;
+  padding: 1.2em 3em;
+  border-radius: 100px;
+  border: none;
+  box-sizing: border-box;
+  padding: 1.5em;
+  width: 200px;
+  transition: 0.5s;
+}
+.functionality-1 .functionality-1-btn:hover {
+  background-color: #000;
+}
+
+.functionality-1:hover {
+  background-color: #212222;
+}
+
+.functionality-2 {
+  height: 100vh;
+  background-color: #0f1012;
+  background-position: top;
+  transition: 2s;
+}
+.functionality-2 .functionality-2-bg {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://n.foxdsgn.com/deva/wp-content/uploads/2020/10/Phone-Bg.png);
+  background-size: cover;
+  background-position: top;
+  transition: 2s;
+}
+.functionality-2 .functionality-2-position {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+  padding: 2em;
+  width: 30%;
+  text-align: start;
+  margin-right: 10%;
+}
+.functionality-2 .functionality-2-section {
+  color: #8c63fd;
+  text-transform: uppercase;
+  font-family: "Source Code Pro", monospace;
+  letter-spacing: 4px;
+}
+.functionality-2 .functionality-2-head {
+  font-family: Roboto;
+  color: #fff;
+  font-size: 49px;
+  font-weight: 500;
+}
+.functionality-2 .functionality-2-text-main {
+  opacity: 0;
+}
+.functionality-2 .functionality-2-text-main .functionality-2-text {
+  padding-bottom: 1em;
+  font-family: Roboto;
+  color: #999;
+  font-size: 18px;
+  line-height: 1.5;
+  opacity: inherit;
+  transition: 0.5s;
+}
+.functionality-2 .functionality-2-text-main .functionality-2-text span {
+  color: #fff;
+  font-weight: 500;
+}
+.functionality-2 .functionality-2-btn {
+  font-size: 14px;
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-color: #8c63fd;
+  color: #fff;
+  padding: 1.2em 3em;
+  border-radius: 100px;
+  border: none;
+  box-sizing: border-box;
+  padding: 1.5em;
+  width: 200px;
+  transition: 0.5s;
+}
+.functionality-2 .functionality-2-btn:hover {
+  background-color: #000;
+}
+
+.functionality-2:hover {
+  background-image: url(https://n.foxdsgn.com/deva/wp-content/uploads/2020/10/Screenshot-at-Oct-02-11-04-26-1.png);
+  background-position: center;
+}
+
+.functionality-2-bg:hover {
+  background-position: bottom;
+}
+
+.functionality-3 {
+  height: 100vh;
+  background-image: url(https://n.foxdsgn.com/deva/wp-content/uploads/2020/10/Phone-Bg-2-1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #0f1012;
+  transition: 1s;
+}
+.functionality-3 .functionality-3-position {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+  padding: 2em;
+  width: 35%;
+  text-align: start;
+  margin: 0 10%;
+}
+.functionality-3 .functionality-3-section {
+  color: #8c63fd;
+  text-transform: uppercase;
+  font-family: "Source Code Pro", monospace;
+  letter-spacing: 4px;
+}
+.functionality-3 .functionality-3-head {
+  font-family: Roboto;
+  color: #fff;
+  font-size: 49px;
+  font-weight: 500;
+}
+.functionality-3 .functionality-3-text {
+  font-family: Roboto;
+  color: #999;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.functionality-3 .functionality-3-text span {
+  color: #fff;
+  font-weight: 500;
+}
+.functionality-3 .functionality-3-btn {
+  font-size: 14px;
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-color: #8c63fd;
+  color: #fff;
+  padding: 1.2em 3em;
+  border-radius: 100px;
+  border: none;
+  box-sizing: border-box;
+  padding: 1.5em;
+  width: 200px;
+}
+
+.functionality-3:hover {
+  background-color: #212222;
+}
+
+.functionality-4 {
+  background-color: #0f1012;
+  color: #fff;
+  padding-top: 10vh;
+  background-color: #0f1012;
+  transition: 2s;
+}
+.functionality-4 .functionality-4-header {
+  width: 100%;
+  text-align: center;
+  padding: 2em;
+}
+.functionality-4 .functionality-4-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+.functionality-4 .functionality-4-main .functionality-4-start,
+.functionality-4 .functionality-4-main .functionality-4-end {
+  display: grid;
+  align-items: center;
+  height: 60vh;
+  width: 400px;
+}
+.functionality-4 .functionality-4-position {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+  padding: 2em;
+  width: 35%;
+  text-align: start;
+  margin: 0 10%;
+}
+.functionality-4 .functionality-4-section {
+  color: #8c63fd;
+  text-transform: uppercase;
+  font-family: "Source Code Pro", monospace;
+  letter-spacing: 4px;
+}
+.functionality-4 .functionality-4-head {
+  font-family: Roboto;
+  color: #fff;
+  font-size: 49px;
+  font-weight: 500;
+  padding: 1em;
+}
+.functionality-4 .functionality-4-text {
+  font-family: Roboto;
+  color: #999;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.functionality-4 .functionality-4-text span {
+  color: #fff;
+  font-weight: 500;
+}
+
+.functionality-4:hover {
+  background-image: url(https://n.foxdsgn.com/deva/wp-content/uploads/2020/10/Screenshot-at-Oct-02-11-04-26-1.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+@media (max-width: 1090px) {
+  .main-section .navbar {
+    flex-direction: row-reverse;
+  }
+  .main-section .navbar .navbar-menu {
+    display: none;
+  }
+  .main-section .navbar .btn-drawer-menu {
+    display: block;
+  }
+  .functionality-2 .functionality-2-position {
+    width: 40%;
+  }
+  .functionality-3 .functionality-3-position {
+    width: 40%;
+  }
+}/*# sourceMappingURL=style.css.map */

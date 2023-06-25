@@ -1,0 +1,153 @@
+.pricing {
+    background-color: $background-color;
+    color: $color-text;
+    padding: 4em;
+
+    .pricing-main{
+        .pricing-header {
+            text-align: center;
+        }
+    }
+   
+
+    .pricing-content {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .plan {
+            width: 30%;
+            background-color: $background-color-pricing;
+            border-radius: 8px;
+            box-shadow: 0px 0px 57px 2px rgb(28, 26, 26);
+            position: relative;
+
+            
+            h3 {
+                width: 100%;
+                text-align: center;
+                background-color: #32373f;;
+                padding: 1em 0;
+                font-family: $roboto-font;
+                font-size: $size-text *2 - 4;
+                font-weight: 500;
+                border-radius : 8px;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+
+            }
+            p {
+                width: 100%;
+                display: block;
+                text-align: center;
+                padding: .5em;
+                font-size: $size-text * 4.6;
+                font-family: $roboto-font;
+                font-weight: 100;
+                color: $color-text;
+                
+                span {
+                    font-size: $size-text;
+                    font-family: $source-font;
+                    font-weight: 400;
+                    color:$main-color;
+                }
+
+                
+            }
+
+            ul {
+
+                width: 100%;
+                padding: 2em;
+                padding-left: 3em;
+                li{
+                    width: 90%;
+                    font-size: $size-text + 4;
+                    font-family: $roboto-font;
+                    font-weight: 400;
+                    color: $paragraph-color;
+                    padding: 1em 0;
+                    border-bottom: 1px solid #777;
+                }
+                li:last-child {
+                    border: none;
+                }
+
+            }
+            .btn-center{
+                text-align: center;
+            }
+            button {
+                font-size: $size-text  ;
+                font-family: $source-font;
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 2px;
+                background-color: $main-color;
+                color: $color-text;
+                padding: 1.5em 2em;
+                border-radius: 100px;
+                border: none;
+                box-sizing: border-box;
+                transition: .5s;
+                
+               
+            }
+            button:hover {
+                background-color: #000;
+            }
+        
+            
+            
+    }
+
+    .plan-scale {
+        transform: scale(1.1);
+        z-index: 2;
+        padding-bottom: 2em;
+
+        h3{
+            background-color: $main-color;
+        }
+
+        .check {
+            width: 90%;
+            font-size: $size-text + 4;
+            font-family: $roboto-font;
+            font-weight: 400;
+            color: $color-text;
+            padding: 1em 0;
+            position: absolute;
+            top: 30%;
+            left: 10%;
+        }
+    }
+
+    
+    }
+
+    .pricing-section{
+        color: $main-color;
+        text-transform: uppercase;
+        font-family: $source-font;
+        letter-spacing: $source-font-spacing ;
+    }
+
+    .pricing-head {
+        font-family: $roboto-font;
+        color: $color-text;
+        font-size: $size-text * 3.5;
+        font-weight: 500;
+         padding: 1em;
+         
+    }
+    .pricing-text {
+        font-family: $roboto-font;
+        color:$paragraph-color ;
+        font-size: $size-text + 4;
+        line-height: 1.5;
+        margin-bottom: 4em;
+        
+    }
+}

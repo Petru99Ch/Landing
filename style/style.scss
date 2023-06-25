@@ -1,0 +1,29 @@
+$main-color: #8c63fd;
+$color-text: #fff;
+$size-text: 14px;
+$background-color-hover: #212222;   
+$background-color: #0f1012;
+$background-color-pricing:#25292f;
+$paragraph-color:#999;
+$source-font: 'Source Code Pro', monospace;
+$source-font-spacing: 4px;
+$roboto-font: Roboto;
+
+body{
+    font-family:$source-font;
+    font-size: 14px;
+    overflow-x: hidden;
+    
+}
+
+
+
+@import "_main.scss";
+@import "_crew.scss";
+@import "_deva.scss";
+@import "_pricing.scss";
+@import "_functionality-1.scss";
+@import "_functionality-2.scss";
+@import "_functionality-3.scss";
+@import "_functionality-4.scss";
+@import "_mediaQ.scss"

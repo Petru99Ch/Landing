@@ -1,0 +1,77 @@
+.functionality-4 {
+    background-color: $background-color;
+    color: $color-text;
+    padding-top: 10vh;
+     // 1111111111111111111111111111111111111111111111111111111111111111
+     background-color: $background-color;
+     transition: 2s;
+
+    .functionality-4-header {
+        width: 100%;
+        text-align: center;     
+        padding: 2em;
+       
+    }
+
+    .functionality-4-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+       
+
+        .functionality-4-start, 
+        .functionality-4-end {
+            display: grid;
+            align-items: center;
+            height: 60vh;
+            width: 400px;
+            
+        }
+
+    }
+
+    .functionality-4-position{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100vh;
+        padding: 2em;
+        width: 35%;
+        text-align: start;
+        margin: 0 10%;
+    }
+
+    .functionality-4-section{
+            color: $main-color;
+            text-transform: uppercase;
+            font-family: $source-font;
+            letter-spacing: $source-font-spacing ;
+            
+    }
+
+    .functionality-4-head {
+            font-family: $roboto-font;
+            color: $color-text;
+            font-size: $size-text * 3.5;
+            font-weight: 500;
+            padding: 1em;
+    }
+    .functionality-4-text {
+        font-family: $roboto-font;
+        color:$paragraph-color ;
+        font-size: $size-text + 4;
+        line-height: 1.5;
+        span{
+            color: $color-text;
+            font-weight: 500;
+        }
+
+    }
+
+}
+
+.functionality-4:hover {
+    background-image: url(https://n.foxdsgn.com/deva/wp-content/uploads/2020/10/Screenshot-at-Oct-02-11-04-26-1.png);
+    background-position: center center;
+    background-size: cover;
+}

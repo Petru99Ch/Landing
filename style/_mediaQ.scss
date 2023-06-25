@@ -1,0 +1,24 @@
+// Main 
+
+@media (max-width: 1090px) {
+
+    .main-section .navbar {
+        flex-direction: row-reverse;
+    }
+    .main-section .navbar .navbar-menu{
+        display: none;
+    }
+
+    .main-section .navbar .btn-drawer-menu {
+        display: block;
+    }
+
+    .functionality-2 .functionality-2-position{ 
+        width: 40%;
+    }
+
+    .functionality-3 .functionality-3-position{ 
+        width: 40%;
+    } 
+}
+

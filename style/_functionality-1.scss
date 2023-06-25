@@ -1,0 +1,74 @@
+.functionality-1{    
+    height: 100vh;
+
+    background-image: url(https://n.foxdsgn.com/deva/wp-content/uploads/2020/10/B_Ph_Part_6.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: $background-color;  
+    transition: 1s;    
+
+    .functionality-1-position{
+        // display: flex;        
+        height: 100vh;
+        width: 40%;
+        padding: 2em;
+        margin: 0 10%;
+
+        #showText{
+            height: 100vh;            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            opacity: 0;
+            transition: 1s;
+        }
+    }
+
+    .functionality-1-section{
+            color: $main-color;
+            text-transform: uppercase;
+            font-family: $source-font;
+            letter-spacing: $source-font-spacing ;
+    }
+
+    .functionality-1-head {
+            font-family: $roboto-font;
+            color: $color-text;
+            font-size: $size-text * 3.5;
+            font-weight: 500;
+    }
+    .functionality-1-text {
+        font-family: $roboto-font;
+        color:$paragraph-color ;
+        font-size: $size-text + 4;
+        line-height: 1.5;
+
+    }
+
+
+
+    .functionality-1-btn{
+            font-size: $size-text  ;
+            font-family: $source-font;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2px;
+            background-color: $main-color;
+            color: $color-text;
+            padding: 1.2em 3em;
+            border-radius: 100px;
+            border: none;
+            box-sizing: border-box;
+            padding: 1.5em;
+            width: 200px;
+            transition: .5s;
+    }
+
+    .functionality-1-btn:hover {
+        background-color: #000;
+    }
+}
+
+.functionality-1:hover {
+    background-color: $background-color-hover;
+}
