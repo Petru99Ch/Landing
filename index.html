@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://n.foxdsgn.com/deva/wp-content/uploads/2020/10/favicon.png">
+    <link rel="stylesheet" href="style/style.css">
+    
+    <title>Deva Home Page</title>
+</head>
+<body onload="showTextHead ()" onscroll="showTextFunc(), showTextFuncSecond()" id="body">
+
+
+
+    <section id="sectionMain" class="main-section" >
+        <div class="drawer-overlay" id="drawer">
+            <ul class="drawer-menu" id="overlay">
+                <li>MENU<a href="#" onclick="closeDrawer()"><i class="fa-solid fa-xmark" ></i></a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Solutions</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Reviews</a></li>
+                <li><a href="">FAQ</a></li>                    
+            </ul>
+        </div>
+
+        <div class="background-video" id="videoBg">
+            
+            <video  autoplay="" muted=""  src="https://n.foxdsgn.com/deva/wp-content/uploads/2020/10/videoplayback.mp4" style="width: 100vw; display: block; "></video>
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#"><img src="images/Logo.webp" alt="Logo"></a>
+            </div>
+            <nav class="navbar-menu">
+                <a onmouseover="showDrowpDownMenu()" class="nav-link menu-down-main  active" aria-current="page" href="#">Home <i class="fa-solid fa-arrow-down"></i></a>
+                <a class="nav-link" href="#">Solutions</a>
+                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#">Reviews</a>
+                <a class="nav-link" href="#">FAQ</a>
+                <button class="button-custom-menu ">Sign Up</button>
+
+                <div class="down-menu" id="itemMenu" onmouseout="unShowDownMenu()">
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i> Solutions</a>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i> Lorem.</a>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i> Ratione.</a>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i> Maiores?</a>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i> A!</a>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i> Fuga.</a>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i> Nisi!</a>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i> Architecto!</a>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i> Doloribus.</a>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i> Aliquid.</a>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i> Suscipit.</a>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i> Amet!</a>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i> Eum?</a>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i> Debitis.</a>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i> Aperiam?</a>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i> Quasi.</a>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i> Consequatur!</a>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i> Iste?</a>
+               </div>
+            </nav>
+
+            <div class="btn-drawer-menu">
+                <a href="#" onclick="openDrawer()"><i class="fa-solid fa-bars-staggered"></i></a>
+            </div>
+            
+            
+            
+        </div>
+
+        
+        <header class="header-description"> 
+            <span id="spanShow_h" class="header-description-section">mobile app</span>
+            <h1 id="headShow_h"class="header-description-head">Easier than <br>
+                never before</h1>
+
+            <p id="phrShow_h" class="header-description-text">Our feature-rich theme was built for ease-of-use <br> and tight integration with WordPress so you’ll <br> be online</p>
+            <button id="btnShow_h" class="header-description-btn">try for free <i class="fa-solid fa-arrow-right"></i></button>
+        </header>
+    </section>
+
+
+    <section class="functionality-1" >
+        <div class="container functionality-1-position">
+
+            <div id="showText"  >
+                <span class="functionality-1-section">functionality</span>
+                <h2 class="functionality-1-head">Best Experience You've 
+                    Ever Had </h2>
+
+                <p class="functionality-1-text ">Instantly turn WordPress into a simple and straight-forward ticketing system. Issue Tracker will help you keep track of your project development with ease. Our feature-rich theme was built for ease-of-use and tight integration with WordPress so you’ll be online and logging tickets within minutes.</p>
+                <button class="functionality-1-btn">try for free</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="functionality-2" >
+        <div class="container functionality-2-position">
+            
+                <span class="functionality-2-section">functionality</span>
+                <h2 class="functionality-2-head">Best Experience You've 
+                    Ever Had </h2>
+                <div id="functionalityPhr" class="functionality-2-text-main">
+                    <p class="functionality-2-text"><span>Our feature-rich</span> theme was built for ease-of-use and tight integration with WordPress so you’ll be online and logging tickets within minutes.</p>
+                    <p class="functionality-2-text"><span>Ease-of-use</span> and tight integration with WordPress so you’ll be online and logging tickets within minutes.</p>
+                </div>
+                <button class="functionality-2-btn">try for free</button>
+            
+            <div class="functionality-2-bg">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="functionality-3">
+        <div class="container functionality-3-position">
+            <span class="functionality-3-section">functionality</span>
+            <h2 class="functionality-3-head">Best Experience You've
+                Ever Had </h2>
+
+            <p class="functionality-3-text"><span>Our feature-rich</span> theme was built for ease-of-use and tight integration with WordPress so you’ll be online and logging tickets within minutes</p>
+            <p class="functionality-3-text"><span>Ease-of-use</span> and tight integration with WordPress so you’ll be online and logging tickets within minutes</p>
+        </div>
+    </section>
+
+    <section class="functionality-4">
+        <div class="container">
+            <div class="functionality-4-header">
+                <span class="functionality-4-section">functionality</span>
+                <h2 class="functionality-4-head">Integrated with Popular Tools</h2>
+                <p class="functionality-4-text">Our feature-rich theme was built for ease-of-use and tight integration with WordPress so you’ll be online and logging tickets within minutes.</p>
+            </div>
+
+            <div class="functionality-4-main">
+
+                <div class="functionality-4-start">
+                    <p class="functionality-4-text"><span>Ease-of-use</span> and tight integration with WordPress so you’ll be online and logging tickets within minutes.</p>
+                    <p class="functionality-4-text"><span>Our feature-rich</span> theme was built for ease-of-use and tight integration with WordPress so you’ll be online and logging tickets within minutes.</p>
+                    <p class="functionality-4-text"><span>Ease-of-use</span> and tight integration with WordPress so you’ll be online and logging tickets within minutes.</p>
+                </div>
+                <div class="functionality-4-center">
+                    <img src="images/phone-1.png" alt="Phone">
+                </div>
+                <div class="functionality-4-end">
+                    <p class="functionality-4-text"><span>Our feature-rich</span> theme was built for ease-of-use and tight integration with WordPress so you’ll be online and logging tickets within minutes.</p>
+                    <p class="functionality-4-text"><span>Ease-of-use</span> and tight integration with WordPress so you’ll be online and logging tickets within minutes.</p>
+                    <p class="functionality-4-text"><span>Our feature-rich</span> theme was built for ease-of-use and tight integration with WordPress so you’ll be online and logging tickets within minutes.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="container pricing-main">
+            <div class="pricing-header">               
+                    <span class="pricing-section">PRICING</span>                    
+                    <h2 class="pricing-head">Choose Your Plan</h2>
+                    <p class="pricing-text">Ease-of-use and tight integration with WordPress so you’ll be online <br> and logging tickets within minutes.</p>                
+            </div>    
+
+            <div class="pricing-content">
+                <div class="plan">
+                    <h3>Starter Plan</h3>
+                    <p>$19<span>/MONTH</span></p>
+                    <ul>
+                        <li>All Financial Tasks</li>
+                        <li>Economic Market Survey</li>
+                        <li>Auto Intelligence</li>
+                        <li>24/7 Support</li>
+                    </ul>
+
+                    <div class="btn-center"><button>buy plan</button></div>
+                    
+                </div>
+
+                <div class="plan plan-scale">
+                    <h3>Premium Plan</h3>
+                    <p>$39<span>/MONTH</span></p>
+                    <ul>
+                        
+                        <li>All Financial Tasks</li>
+                        <li>Economic Market Survey</li>
+                        <li>Auto Intelligence</li>
+                        <li>24/7 Support</li>
+                        <li>Technology Services</li>
+                    </ul>
+
+                    <div class="check"><i class="fa-solid fa-circle-check" style="color: #8c63fd;"></i> 14-day maney back guarantee</div>
+
+                    <div class="btn-center"><button>buy plan</button></div>
+                </div>
+
+                <div class="plan">
+                    <h3>Starter Plan</h3>
+                    <p>$59<span>/MONTH</span></p>
+                    <ul>
+                        <li>All Financial Tasks</li>
+                        <li>Economic Market Survey</li>
+                        <li>Auto Intelligence</li>
+                        <li>24/7 Support</li>
+                        
+                    </ul>
+
+                    <div class="btn-center"><button>buy plan</button></div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="crew">
+        <div class="container crew-d">
+            <div class="crew-description">
+                <span class="crew-section">our crew</span>
+                <h2 class="crew-head">Making the Best Experience</h2>
+                <p class="crew-text">Our feature-rich theme was built for ease-of-use and tight integration with WordPress so you’ll be online and logging tickets within minutes. Ease-of-use and tight integration with WordPress so you’ll be online and logging tickets within minutes.</p>
+                <div class="crew-footer">
+                    <span class="crew-description-footer">DESIGNET TOOLS FOR</span>
+                    <img src="images/crew-1.webp" alt="crew1">
+                    <img src="images/crew-2.webp" alt="crew2">
+                    <img src="images/crew-3.webp" alt="crew3">
+                </div>
+            </div>
+            <div class="crew-profesion">
+                <div class="designer">
+                    <img src="images/designer.webp" alt="designer">
+                    <div class="profesion-1">
+                        <h4>judith mossman</h4>
+                        <span>@designer</span>
+                    </div>
+                </div>
+                <div class="developer">
+                    <img src="images/developer.webp" alt="developer">
+                    <div class="profesion-2">
+                        <h4>walles breen</h4>
+                        <span>@developer</span>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="deva">
+
+        
+           <video src="video/poligonal.mp4" autoplay loop style=" width: 100%; position: absolute; z-index: -1;" ></video>
+
+        <div class="deva-description">
+            <div class="deva-description-main">
+                <h4>DEVA</h4>
+                <p>COMING SOON TO WEB, DESKTOP, AND MOBILE</p>
+            </div>
+
+            <div class="deva-description-second">
+                <a href="#">Home</a>
+                <a href="#">Finance Pricing</a>
+                <a href="#">Finance – Solutions</a>
+                <a href="#">Mobile App – Reviews</a>
+
+            </div>
+                
+            
+        </div>
+        <div class="deva-bg">
+            <div class="deva-main">
+                <div class="deva-text">
+                    <img src="images/Logo-2.webp" alt="">
+                    <h3>let's try it now</h3>
+                    <p>COMING SOON TO <br>
+                        WEB, DESKTOP, AND MOBILE</p>
+                </div>
+                <div class="deva-top">
+
+                </div>
+                <div class="deva-bottom">
+
+                </div>
+                
+                
+            </div>
+        </div>
+        
+    </section>
+   
+
+    <script src="logical/logical.js"></script>
+    <script src="logical/function.js"></script>
+</body>
+</html>
